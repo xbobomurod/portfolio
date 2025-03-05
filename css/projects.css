@@ -1,0 +1,128 @@
+/*************  ✨ Codeium Command ⭐  *************/
+#projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  background: linear-gradient(
+    180deg,
+    #ffcc00,
+    #ffbb00,
+    #ffaa00,
+    #ff9900,
+    #ff8800,
+    #ff7700,
+    #ff6600,
+    #ff5500,
+    #ff4400,
+    #ff3300,
+    #ff2200,
+    #ff1100
+  );
+  height: 88vh;
+  scroll-margin-top: 12vh;
+}
+
+#projects h2 {
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #242e39;
+  text-shadow: 1px 5px 10px rgba(255, 255, 255, 0.8);
+}
+
+.container-projects {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  margin: 1rem;
+  background: #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  transition: all 0.3s linear;
+  width: 100%;
+  width: 400px;
+  height: 400px;
+}
+
+.project h3 {
+  font-size: 2rem;
+  color: #242e39;
+}
+
+.project p {
+  font-size: 1.5rem;
+  color: #242e39;
+}
+
+.project button {
+  margin-top: 1rem;
+  /* padding: 0.5rem 1rem; */
+  font-size: 1.5rem;
+  background: #ffcc00;
+  color: #242e39;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+.project button:hover {
+  background: #242e39;
+  color: #ffcc00;
+}
+.project a {
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: #242e39;
+}
+
+.project a:hover {
+  color: #ffcc00;
+}
+
+.project:hover {
+  transform: scale(1.05);
+}
+
+
+@media (max-width: 1024px) {
+  #projects {
+    height: auto;
+    /* padding: 1rem; */
+  }
+  .container-projects {
+    flex-direction: column;
+    align-items: center;
+  }
+  .project {
+    width: 70%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+}
+
+
+@media (max-width: 768px) {
+  #projects {
+    height: auto;
+    padding: 1rem;
+  }
+  .container-projects {
+    flex-direction: column;
+    align-items: center;
+  }
+  .project {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}

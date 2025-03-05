@@ -1,0 +1,219 @@
+/*************  ✨ Codeium Command ⭐  *************/
+#contact {
+  scroll-margin-top: 12vh;
+  height: 88vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  background: linear-gradient(
+    180deg,
+    #00eeff,
+    #00ddff,
+    #00ccff,
+    #00bbff,
+    #00aaff,
+    #0099ff,
+    #0088ff,
+    #0077ff,
+    #0066ff,
+    #0055ff,
+    #0044ff,
+    #0033ff
+  );
+}
+
+.contact-all-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "form contact"
+    "form contact";
+  gap: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.container-form {
+  grid-area: form;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background: #ccffee;
+  padding: 1rem;
+  border-radius: 10px;
+  color: #000000;
+}
+
+.container-contact {
+  grid-area: contact;
+  display: flex;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  flex-direction: column;
+  gap: 2rem;
+  flex-wrap: wrap;
+  color: #000000;
+}
+
+.contact-info {
+  background: #ccffee;
+  padding: 1rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: #000000;
+}
+
+.contact-info h3 {
+  color: #000000;
+}
+
+.contact-info a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+.contact-info a:active {
+  text-decoration: underline;
+}
+
+.contact-info a:visited {
+  text-decoration: underline;
+}
+.arrow {
+  width: 0;
+  height: 0;
+  border-bottom: 10px solid transparent;
+  border-top: 10px solid transparent;
+  border-right: 15px solid #08ffad;
+  display: inline-block;
+  margin-left: 5px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.contact-info a:hover .arrow {
+  transform: translateX(5px);
+}
+
+.contact-info a:active .arrow {
+  transform: translateX(7px);
+}
+
+/* contact input */
+.contact-input {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  gap: 1rem;
+  background: #ccffee;
+  padding: 1rem;
+  border-radius: 10px;
+  color: #000000;
+}
+
+input,
+textarea {
+  border: none;
+  padding: 1rem;
+  font-size: 1.2rem;
+  outline: none;
+  border-radius: 1rem;
+  text-rendering: optimizeSpeed;
+  resize: none;
+  color: #000000;
+  background: #ccffee;
+  border: 2px solid #08ffad;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease-in-out;
+}
+
+.contact-btn {
+  background: #ffce08;
+  color: #000;
+}
+
+.contact-btn:hover {
+  transform: translateY(-4px);
+}
+.contact-btn:active {
+  transform: translateY(4px);
+}
+
+@media (max-width: 1024px) {
+  #contact {
+    padding: 1rem;
+    height: auto;
+  }
+  .container-contact {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container-contact-form {
+    width: 100%;
+  }
+
+  .contact-all-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-info {
+    width: 100%;
+  }
+  .contact-input {
+    width: 100%;
+  }
+  .contact-info a {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  #contact {
+    padding: 1rem;
+    height: auto;
+  }
+  .container-contact {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "contact"
+      "form";
+  }
+
+  .container-contact-form {
+    width: 100%;
+  }
+
+  .contact-all-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "contact"
+      "form";
+  }
+  .contact-info {
+    width: 100%;
+  }
+  .contact-input {
+    width: 100%;
+  }
+  .contact-info a {
+    display: flex;
+    justify-content: center;
+  }
+  .contact-info a:hover {
+    text-decoration: underline;
+  }
+}
