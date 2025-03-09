@@ -139,6 +139,7 @@
 @media (max-width: 768px) {
   #about {
     padding: 3rem;
+    height: auto;
   }
   .about-content {
     flex-direction: column;
